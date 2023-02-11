@@ -24,12 +24,11 @@ form.onsubmit = event => {
         return;      
 
     }
-
     AlertError.close()
     
     const result = IMC(weight, height)
     const message = `Seu IMC é de ${result}`
-
+// resultado do IMC!
     Modal.messege.innerText = message
     Modal.open()
 }
@@ -37,4 +36,4 @@ form.onsubmit = event => {
 inputWeight.oninput = () => AlertError.close()
 inputHeight.oninput = () => AlertError.close()
 
-// alerta erro //
+// alerta erro! //
